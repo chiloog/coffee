@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet');
+
+html, body {
+    /* height: 100vh; */
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    font-family: "Spectral", sans-serif;
+    font-family: "DM+Sans", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    background-color:#fff;
+    overflow: hidding;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/*Шапка*/
+
+.head {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/background.avif');
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    padding: 30px 32px 20px 35px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header a {
+    font-family: "DM+Sans", sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 3px;;
+    opacity: 75%;
+    transition: opacity 0.4s ease;
+}
+
+.header a:hover {
+    opacity: 100%;
+}
+
+.headerRight {
+    display: flex;
+    gap: 50px;
+}
+
+.headMain {
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.headMain p {
+   color: #fff;
+   opacity: 55%;
+   font-size: 12px;
+   font-weight: 500;
+   letter-spacing: 4px;
+}
+
+.headMain h1 {
+    margin: 0;
+    font-family: "Spectral", sans-serif;
+    color: #fff;
+    font-size: 86px;
+    line-height: 100px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.headMain a {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 16px 28px 16px 28px;
+    letter-spacing: 3px;
+    display: inline-block; 
+    font-size: 12px;
+    font-weight: 500;
+    width: fit-content;
+    transition: all 0.3s ease;
+}
+
+.headMain a:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+/*О нас*/
+
+.story {
+    background-image: url('../images/background2.avif'); 
+    background-repeat: no-repeat;
+    height: auto;
+    background-position: right;
+    background-color: rgba(234, 224, 200, 1);
+    padding: 80px 96px 80px 96px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.storyTextOne {
+    color: rgba(107, 87, 68, 1);
+    font-family: "DM+Sans", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+.story h2 {
+    font-family: "Spectral", sans-serif;
+    font-size: 48px;
+    color: rgba(30, 15, 7, 1);
+    font-weight: 300;
+    line-height: 60px;
+    margin: 0;
+}
+
+.storyText {
+    font-family: "DM+Sans", sans-serif;
+    color: rgba(107, 87, 68, 1);
+    font-size: 15px;
+    line-height: 27px;
+    font-weight: 500;
+}
+
+/*Меню*/
+
+.menu {
+    background-color: rgba(245, 237, 216, 1);
+    padding: 96px 200px; 
+    height: auto;
+}
+
+.menuHeadTextOne {
+   color: rgba(107, 87, 68, 1);
+   font-size: 12px;
+   font-family: "DM+Sans", sans-serif;
+   letter-spacing: 5px;
+   font-weight: 500;
+   margin-bottom: 12px;
+}
+
+.menuHead {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+    border-bottom: 1.5px solid rgba(234, 224, 200, 1);
+}
+
+.menuHead h2 {
+   margin: 0;
+   color: rgba(30, 15, 7, 1);
+   font-size: 48px;
+   font-family: "Spectral", sans-serif;
+   font-weight: 300;
+}
+
+.menuHeadTextTwo {
+    font-family: "DM+Sans", sans-serif;
+    color: rgba(107, 87, 68, 1);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    text-align: right;
+    line-height: 25px;
+}
+
+.menuMain {
+    padding-top: 64px;
+}
+
+.menuMain h3 {
+    color: rgba(168, 69, 42, 1);
+    font-family: "Spectral", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.menuMainTitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuMainPrice {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.menuMainBlock {
+    padding: 20px 0;
+    border-bottom: 1.5px solid rgba(234, 224, 200, 1);
+    width: 500px;
+}
+
+.menuMainBlock div {
+   display: flex;
+   justify-content: space-between;
+}
+
+.menuMainPrice span {
+    color: rgba(30, 15, 7, 1);
+    font-family: "DM+Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.priceText {
+    color: rgba(107, 87, 68, 1);
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "DM+Sans", sans-serif;
+}
+
+.price {
+    color: rgba(107, 87, 68, 1);
+    font-family: "Spectral", sans-serif;
+}
+
+.image {
+    background-image: url('../images/cofe.avif'); 
+    background-repeat: no-repeat;
+    height: 700px;
+    flex: 0.9;
+}
+
+.menuFooter {
+    display: flex;
+    margin-top: 64px;
+}
+
+.menuFooterText {
+    background-color: rgba(237, 228, 204, 1);
+    padding: 56px 40px 56px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.feature {
+    color: rgba(107, 87, 68, 1);
+    font-size: 12px;
+    font-family: "DM+Sans", sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+.menuFooterText h3 {
+    color: rgba(30, 15, 7, 1);
+    font-size: 36px;
+    font-weight: 400;
+    font-family: "Spectral", sans-serif;
+    margin: 0;
+}
+
+.menuFooterTextTwo {
+    color: rgba(107, 87, 68, 1);
+    font-size: 14px;
+    font-family: "DM+Sans", sans-serif;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.menuFooterText span {
+    color: rgba(168, 69, 42, 1);
+    font-size: 12px;
+    font-family: "DM+Sans", sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+/*какие то зерна*/
+
+.origin {
+    padding: 96px 200px;
+    background-color: rgba(30, 15, 7, 1);
+    display: flex;
+}
+
+.title {
+    color: rgba(245, 237, 216, 0.45);
+    opacity: 45%;
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "DM+Sans", sans-serif;
+}
+
+.originTextOne {
+    width: 600px;
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    border-bottom: 1px solid rgba(245, 237, 216, 0.65);
+}
+
+.originTextOne h2 {
+    margin: 0;
+    color: rgba(245, 237, 216, 1);
+    font-size: 48px;
+    font-family: "Spectral", sans-serif;
+    line-height: 60px;
+    font-weight: 300;
+}
+
+.about {
+    color: rgba(245, 237, 216, 0.65);
+    opacity: 65%;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+    line-height: 20px;
+}
+
+.originTextTwo {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    padding: 48px 0;
+}
+
+.originTextTwoNum {
+    color: rgba(245, 237, 216, 1);
+    font-size: 36px;
+    font-family: "Spectral", sans-serif;
+    font-weight: 500;
+}
+
+.originTextTwoText {
+    color: rgba(245, 237, 216, 0.45);
+    opacity: 45%;
+    font-size: 10px;
+    font-family: "DM+Sans", sans-serif;
+    font-weight: 500;
+}
+
+.originImages {
+    background-image: url('../images/origin.avif');
+    background-repeat: no-repeat;
+    height: 500px;
+    flex: 1;
+}
+
+/*КОНТАКТЫ*/
+
+.contacts {
+    padding: 96px 200px;
+    background-color: rgba(234, 224, 200, 1);
+    display: flex;
+    gap: 300px;
+}
+
+.contactsTextTitle {
+    color: rgba(107, 87, 68, 1);
+    font-family: "DM+Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin-bottom: 35px;
+}
+
+.contactsTextOneAll {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contactsText h2 {
+    color: rgba(30, 15, 7, 1);
+    font-family: "Spectral", sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 60px;
+    margin: 0;
+    margin-bottom: 56px;
+}
+
+.contactsTextOne {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.contactsTextOneFirst {
+    display: flex;
+    gap: 10px;
+}
+
+.symbol {
+    color: rgb(231, 83, 83);
+    font-size: 20px;
+}
+
+.contactsTextOneTitle {
+    margin-top: 6px;
+    color: rgba(30, 15, 7, 1);
+    font-size: 14px;
+    font-family: "DM+Sans", sans-serif;
+    font-weight: 500;
+}
+
+.contactsTextOneAbout {
+    margin-left: 10px;
+    color: rgba(107, 87, 68, 1);
+    font-family: "DM+Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.contactsImage {
+    background-image: url('../images/chair.avif');
+    background-repeat: no-repeat;
+    height: 700px;
+    flex: 1;
+}
+
+/*ПОСЛЕДНЯЯ ПЛАШКА*/
+
+.footer {
+    padding: 40px 200px;
+    background-color: rgba(30, 15, 7, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerTitle {
+    color: rgba(245, 237, 216, 1);
+    font-family: "Spectral", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.footerInfo {
+    color: rgba(245, 237, 216, 0.35);
+    opacity: 35%;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.footerInfoBot {
+    display: flex;
+    gap: 10px;
+}
